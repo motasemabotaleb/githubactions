@@ -10,7 +10,7 @@ on:
       - main
       - "release/**"
     paths:
-      - "/src/**"
+      - "src/**"
 
 jobs:
   test:
@@ -19,5 +19,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      name: run tests
-      run: npm test
+      - name: run tests
+        run: npm test
