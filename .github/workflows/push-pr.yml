@@ -5,6 +5,7 @@ on:
       - "release/**"
     paths:
       - "src/**"
+
   pull_request:
     branches:
       - main
@@ -15,9 +16,10 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: run tests
+      - name: Run tests
         run: npm test
